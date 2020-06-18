@@ -1,23 +1,23 @@
-### ETL Project
+# ETL Project
 This project is an ETL assignment for a data analysis class at the University of Denver.  
-# Project Objective
+## Project Objective
 Preparing wine lovers to visit the wineries recognized by Wine Enthusiast for top-rated wines.  
 
 Group Members: Zach Elson, Martin Wehrli, Katherine Sullivan
 
-# Project Objective
+## Project Objective
 The purpose of this project is to demonstrate an understanding of ETL.
 
-# Methods Used
+## Methods Used
 * Data Visualization
 * Google Geocode API Platform
 
-# Technologies
+## Technologies
 * Python
 * Postgres
 * Pandas, jupyter
 
-# Getting Started
+## Getting Started
 **To run this project:**
 open the Martins_wine list.ipynb file
 you will have to also create a config.py file with 
@@ -36,12 +36,12 @@ Martins_wine_list.ipynb                   Application that does out data analysi
 Output the directory                      Location where we save output CSV's
 Resources directory                       Location for where we keep our csv's to import our data
 
-# Project Description
-# Extract
+## Project Description
+### Extract
 Data for this project came from two sources, Wine Enthusiast Magazine (www.winemag.com) and Google (www.google.com).  The wine data was downloaded from Kaggle.com in the form of 16 separate CSVs.  The data in Kaggle was originally sourced from the Wine Enthusiast Magazine website. 
 Hotel and restaurant data was extracted using Google’s Geocode API platform (https://maps.googleapis.com/maps/api/geocode/json) and performing JSON requests .  Wine region and country information from the wine dataset was used to return latitude and longitude for each winery.  This latitude and longitude data was then used to pull the nearest lodging and restaurants to each winery using Google’s Place API platform (https://maps.googleapis.com/maps/api/place/nearbysearch/json).
 
-# Transform
+### Transform
 **Step 1: Build and clean combined wine dataset**
 
 Transforming – Initially, using Python we combined 16 CSV files into one larger dataframe (“all_wines_df”) in a Jupyter Notebook.
@@ -67,7 +67,7 @@ Transforming – The cleaned dataset “thirty_dollars_clean.csv” was read int
 
 Transforming – The same latitude and longitude data developed in Step 3 above was used to query Google’s “Nearby” mapping API (“https://maps.googleapis.com/maps/api/place/nearbysearch/json) to find the nearest hotel and restaurant to each winery in the data.  Several columns of data were dropped as there are not as relevant to the listing of nearest hotel and restaurant.  Additionally, this wine and winery data can be accessed using ‘ID’, ‘winery’ or other keys in both tables.
 
-# Load
+### Load
 **Step 1: Load table of all wine data in PostGres**
 
 We created a database within Postgres to store the wine data for future access. The Pandas dataframe “all_wines_df” is quite large but also full of a lot of useful information about wines (see image below).  We created an engine, connection and then session with pgAdmin to convert the dataframe to a SQL table (“all_wines”) so it can be accessed and queried easily.   Below is a screen shot from Postgres of the “all_wines” table we created:

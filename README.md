@@ -1,5 +1,6 @@
 # ETL Project
 This project is an ETL assignment for a data analysis class at the University of Denver. 
+
 **Group Members:** Zach Elson, Martin Wehrli, Katherine Sullivan
 
 ## Project Objective

@@ -1,4 +1,4 @@
-## ETL Project
+### ETL Project
 This project is an ETL assignment for a data analysis class at the University of Denver.  
 # Project Objective
 Preparing wine lovers to visit the wineries recognized by Wine Enthusiast for top-rated wines.  

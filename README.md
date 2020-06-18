@@ -7,7 +7,7 @@ This project is an ETL assignment for a data analysis class at the University of
 Preparing wine lovers to visit the wineries recognized by Wine Enthusiast for top-rated wines.  
 
 ## Project Objective
-The purpose of this project is to demonstrate an understanding of ETL.
+The purpose of this project is to demonstrate an understanding of ETL.  In this project, a Wine Enthusiast database of reviewed wines is used in conjunction with Google's Geocode API platform to produce a list of hotels and restaurants near each winery.  The goal is to provide this information to users to help them plan their visits to these wineries.
 
 ## Methods Used
 * Data Visualization
@@ -17,6 +17,8 @@ The purpose of this project is to demonstrate an understanding of ETL.
 * Python
 * Postgres
 * Pandas, jupyter
+* Glob
+* SQLalchemy
 
 ## Getting Started
 **To run this project:**

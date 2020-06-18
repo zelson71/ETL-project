@@ -1,9 +1,9 @@
 # ETL Project
-This project is an ETL assignment for a data analysis class at the University of Denver.  
+This project is an ETL assignment for a data analysis class at the University of Denver. 
+## Group Members: Zach Elson, Martin Wehrli, Katherine Sullivan
+
 ## Project Objective
 Preparing wine lovers to visit the wineries recognized by Wine Enthusiast for top-rated wines.  
-
-Group Members: Zach Elson, Martin Wehrli, Katherine Sullivan
 
 ## Project Objective
 The purpose of this project is to demonstrate an understanding of ETL.

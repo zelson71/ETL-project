@@ -1,8 +1,42 @@
-## ETL Project	
-Preparing wine lovers to visit the wineries recognized by Wine Enthusiast for top-rated wines
+## ETL Project
+This project is an ETL assignment for a data analysis class at the University of Denver.  
+# Project Objective
+Preparing wine lovers to visit the wineries recognized by Wine Enthusiast for top-rated wines.  
 
 Group Members: Zach Elson, Martin Wehrli, Katherine Sullivan
 
+# Project Objective
+The purpose of this project is to demonstrate an understanding of ETL.
+
+# Methods Used
+* Data Visualization
+* Google Geocode API Platform
+
+# Technologies
+* Python
+* Postgres
+* Pandas, jupyter
+
+# Getting Started
+**To run this project:**
+open the Martins_wine list.ipynb file
+you will have to also create a config.py file with 
+gkey = "your key here" as one of the lines
+
+also you may need to install sqlalchemy_utils
+if you have Anaconda installed this can be achieved by:
+
+conda install sqlalchemy-utils
+
+The files are as follows in this project:
+
+Encoding_Check.ipynb                      A script to check encoding on excel files
+ETL-Final-Report                          Final report Document 
+Martins_wine_list.ipynb                   Application that does out data analysis and creates postgres database and tables
+Output the directory                      Location where we save output CSV's
+Resources directory                       Location for where we keep our csv's to import our data
+
+# Project Description
 # Extract
 Data for this project came from two sources, Wine Enthusiast Magazine (www.winemag.com) and Google (www.google.com).  The wine data was downloaded from Kaggle.com in the form of 16 separate CSVs.  The data in Kaggle was originally sourced from the Wine Enthusiast Magazine website. 
 Hotel and restaurant data was extracted using Google’s Geocode API platform (https://maps.googleapis.com/maps/api/geocode/json) and performing JSON requests .  Wine region and country information from the wine dataset was used to return latitude and longitude for each winery.  This latitude and longitude data was then used to pull the nearest lodging and restaurants to each winery using Google’s Place API platform (https://maps.googleapis.com/maps/api/place/nearbysearch/json).
@@ -51,22 +85,3 @@ The query used for this step of the Transform section returned the nearest hotel
 
 
 
-**To run this project:**
-
-open the Martins_wine list.ipynb file
-you will have to also create a config.py file with 
-gkey = "your key here" as one of the lines
-
-
-also you may need to install sqlalchemy_utils
-if you have Anaconda installed this can be achieved by:
-
-conda install sqlalchemy-utils
-
-The files are as follows in this project:
-
-Encoding_Check.ipynb                      A script to check encoding on excel files
-ETL-Final-Report                             Final report Document 
-Martins_wine_list.ipynb                      Application that does out data analysis and creates postgres database and tables
-Output the directory                         Location where we save output CSV's
-Resources directory                          Location for where we keep our csv's to import our data
